@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .mycustom {
+        @apply h-10
+    }
+
+    .navhead{
+        @apply w-full h-16 absolute z-20 top-20 bg-yellow-300; 
+    }
+
+    .suspect{
+        @apply w-full z-20 h-20 absolute bg-green-500 ;
+    }
+    .sticking{
+        @apply bg-red-600 w-full z-40 h-16 top-0 sticky transition-all
+    }
+
+    .sticking2{
+        @apply bg-blue-600 w-full z-20 h-16 top-0 sticky
+    }
+
+
+  }
