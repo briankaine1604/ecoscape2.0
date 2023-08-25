@@ -15,7 +15,9 @@ module.exports = {
 
       height:{
         'navhead':'1rem'
-      }
+      },
+
+     
     },
   },
   plugins: [],

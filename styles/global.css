@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bitter:wght@200;500&family=Jost:ital,wght@0,300;1,100;1,200&family=Noto+Serif:wght@100;200;300&family=Red+Hat+Display&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .antic{
+        font-family: 'Antic Slab', serif;
+    }
+
+    .bitter{
+        font-family: 'Bitter', serif;
+    }
+       
+    .jost{
+        font-family: 'Jost', sans-serif;
+    }
+    
+    .noto{
+        font-family: 'Noto Serif', serif;
+    }
+
+    .red{
+        font-family: 'Red Hat Display', sans-serif;
+    }
+        
+        
+        
+        
+      
+    .mycustom {
+        @apply h-10
+    }
+
+    .navhead{
+        @apply w-full h-16 absolute top-20 z-30 bg-transparent; 
+    }
+
+    .suspect{
+        @apply w-full z-30 h-20 absolute bg-transparent ;
+    }
+
+    .suspect2{
+        @apply w-full h-screen bg-slate-400 relative z-10 top-0;
+    }
+    .sticking{
+        @apply w-full z-40 h-16 top-0 fixed
+    }
+    
+    .sticking2{
+        @apply bg-blue-900 w-full z-40 h-16 top-0 fixed
+    }
+
+    .blocked{
+        @apply w-1/12 border 
+    }
+
+  }
