@@ -35,11 +35,11 @@
     }
 
     .navhead{
-        @apply w-full h-16 absolute top-20 z-30 bg-transparent; 
+        @apply w-full h-16 absolute top-20 z-50 bg-transparent; 
     }
 
     .suspect{
-        @apply w-full z-30 h-20 absolute bg-transparent ;
+        @apply w-full z-50 h-20 absolute bg-transparent ;
     }
 
     .suspect2{
@@ -50,8 +50,10 @@
     }
     
     .sticking2{
-        @apply bg-blue-900 w-full z-40 h-16 top-0 fixed
+        @apply bg-slate-900 w-full z-40 h-16 top-0 fixed
     }
+
+    
 
     .blocked{
         @apply w-1/12 border 

@@ -44,27 +44,44 @@ const Header = () => {
   return (
     <div className='text-white'>
     <div className='suspect justify-center flex bitter items-center text-white text-5xl'>ECOSCAPE.</div>
-      <div className={`grid border grid-cols-12 navhead ${isSticking ? 'sticking' : ''} 
+      <div className={`grid grid-cols-12 group navhead ${isSticking ? 'sticking' : ''} 
       ${isSticking2 ? 'sticking2' : ''}`}>
         <div className='col-span-2 justify-center flex bitter items-center text-white text-4xl'>
           <div className={` ${!isSticking ? 'hidden' : 'flex'}`}>Ecoscape.</div></div>
-        <div className='col-span-8 grid grid-cols-6 text'>
+        <div className='col-span-8 grid grid-cols-6 text  relative justify-center group'>
           {navlinks.map(({name,id,link})=>(
-            <div key={id} className='text-xl flex justify-center items-center'>
-              <Link className='' href={link}>{name}</Link>
-            </div>
-          ))}
+            <div key={id} className='text-xl flex justify-center items-center group relative'>
+            <Link
+              className='hover:border-b focus:border-b font-medium '
+              href={link}
+            >
+              {name}
+            </Link>
+            <div className='w-full absolute hidden group-hover:flex  min-w-full top-16 h-56'></div>
           </div>
+          
+          ))}
+          <div className='hidden group-hover:flex absolute border  min-w-full top-16 h-56 bg-slate-900 bg-opacity-80 transition ease-in-out delay-700 duration-500 '>
+            
+          </div>
+          </div>
+          <div className='hidden group-hover:flex absolute border  min-w-full top-16 h-56 bg-slate-900 bg-opacity-80 transition ease-in-out delay-700 duration-500 '>
+            
+            </div>
       </div>
       <div className='suspect2'>
         <Image
         fill={true}
         style={{objectFit:"cover"}}
-        src={`/images/EcoLanding.png`}
+        src={`/images/eco2.jpg`}
         alt='green trees in a forest'
         loading="lazy"
+        
         />
+        
       </div>
+      <div className='bg-slate-900 w-full h-screen absolute justify-center top-0 items-center flex bg-opacity-40 z-20 text-white uppercase'>
+        <div className='flex-col text-center text-3xl font-semibold'><div>"Exploring nature's beauty:</div> <div>Your Journey through the Ecoscape"</div> </div></div>
     </div>
   )
 }
