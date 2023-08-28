@@ -59,4 +59,44 @@
         @apply w-1/12 border 
     }
 
+    .slide-in-top {
+        animation: slide-in-top 1s ease-out;
+      }
+      
+      @keyframes slide-in-top {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      
+      .slide-in-right {
+        animation: slide-in-right .8s ease-out;
+      }
+      
+      @keyframes slide-in-right {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      .slide-in-bottom {
+        animation: slide-in-bottom .5s ease-out;
+      }
+      
+      @keyframes slide-in-bottom {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      
+
   }
