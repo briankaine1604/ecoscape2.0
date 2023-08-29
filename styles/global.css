@@ -35,11 +35,11 @@
     }
 
     .navhead{
-        @apply w-full h-16 absolute top-20 z-50 bg-transparent; 
+        @apply w-full h-16 absolute top-20 z-40 bg-transparent; 
     }
 
     .suspect{
-        @apply w-full z-50 h-20 absolute bg-transparent ;
+        @apply w-full z-30 h-20 absolute bg-transparent ;
     }
 
     .suspect2{
@@ -62,6 +62,14 @@
     .slide-in-top {
         animation: slide-in-top 1s ease-out;
       }
+
+     .hovering{
+      @apply scale-125 transform transition ease-in duration-100 delay-100;
+     } 
+
+     .hovering2{
+      @apply hover:scale-125 transform transition ease-in duration-100 delay-100;
+     }
       
       @keyframes slide-in-top {
         from {
