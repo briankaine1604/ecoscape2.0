@@ -16,7 +16,7 @@ const Section1 = () => {
             src={`/images/sec2img2.jpg`}
             alt='meadow filled with flowers'
             loading="lazy"
-            className='transition ease-in-out  group-hover:scale-110 duration-500 delay-100'
+            className='transition ease-in-out  group-hover:scale-105 duration-500 delay-100'
             />
             <div className='bg-gray-200 absolute bg-opacity-5 group-hover:bg-opacity-20 z-20 w-96 h-56'>
           
@@ -41,7 +41,7 @@ const Section1 = () => {
             src={`/images/panda.png`}
             alt='meadow filled with flowers'
             loading="lazy"
-            className='transition ease-in-out  group-hover:scale-110 duration-500 delay-100'
+            className='transition ease-in-out  group-hover:scale-105 duration-500 delay-100'
             />
             <div className='bg-gray-200 absolute bg-opacity-5 group-hover:bg-opacity-20 z-20 w-96 h-56'>
           
@@ -60,7 +60,7 @@ const Section1 = () => {
             src={`/images/tiger.png`}
             alt='meadow filled with flowers'
             loading="lazy"
-            className='transition ease-in-out  group-hover:scale-110 duration-500 delay-100'
+            className='transition ease-in-out  group-hover:scale-105 duration-500 delay-100'
             />
             <div className='bg-gray-200 absolute bg-opacity-5 group-hover:bg-opacity-20 z-20 w-96 h-56'>
           
