@@ -35,7 +35,7 @@
     }
 
     .navhead{
-        @apply w-full h-16 absolute top-20 z-40 bg-transparent; 
+        @apply w-full h-12  absolute top-20 z-40 bg-transparent; 
     }
 
     .suspect{
@@ -46,14 +46,24 @@
         @apply w-full h-screen bg-slate-400 relative z-10 top-0;
     }
     .sticking{
-        @apply w-full z-40 h-16 top-0 fixed
+        @apply w-full z-40 h-12 top-0 fixed
     }
     
     .sticking2{
-        @apply bg-slate-900 w-full z-40 h-16 top-0 fixed
+        @apply bg-slate-900 w-full z-40 h-12 top-0 fixed
     }
 
-    
+    .opac{
+      @apply absolute bg-opacity-5 group-hover:bg-opacity-10 z-20 bg-gray-200
+    }
+
+    .small-box{
+      @apply w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40
+    }
+
+    .transit{
+      @apply transition ease-in-out  group-hover:scale-110 duration-500 delay-100;
+    }
 
     .blocked{
         @apply w-1/12 border 
@@ -62,6 +72,10 @@
     .slide-in-top {
         animation: slide-in-top 1s ease-out;
       }
+
+    .heading1{
+      @apply font-bold text-3xl uppercase;
+    }
 
      .hovering{
       @apply scale-125 transform transition ease-in duration-100 delay-100;

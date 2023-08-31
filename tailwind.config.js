@@ -14,11 +14,13 @@ module.exports = {
       },
 
       height:{
-        'navhead':'1rem'
+        'grid1h':'400px',
+        
       },
 
       width:{
-        'navwidth':'900px'
+        'navwidth':'900px',
+        'grid1w':'500px',
       },
 
       colors:{
