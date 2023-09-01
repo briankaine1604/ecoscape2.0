@@ -24,7 +24,7 @@ const Section3 = () => {
             </div>
             <div className="flex mt-5 justify-between">
               <StandardButton content={'Find out More'}/>
-              <StandardButton/>
+              <StandardButton content={'Visit our Store'}/>
             </div>
           </div>
         </div>

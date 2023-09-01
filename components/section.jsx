@@ -79,7 +79,7 @@ const Section1 = () => {
             
           </div>
           </Link>
-          <div className='h-16 sm:w-32 md:w-36 lg:w-40 lg:h-40 text-justify text-sm ml-2'>
+          <div className='h-16 sm:w-32 md:w-36 lg:w-40 lg:h-40 text-justify text-sm ml-2 sm:ml-0'>
                 <div>EcoScape</div>
                 <div>30th April 2023</div>
                 <div className="text-xs font-semibold">"Panda's Secret Hideaway: A Playful Peek Through Nature's Curtain"</div>
@@ -102,7 +102,7 @@ const Section1 = () => {
             
           </div>
           </Link>
-              <div className='h-16 sm:w-32 md:w-36 lg:w-40 lg:h-40 text-justify text-sm ml-2'>
+              <div className='h-16 sm:w-32 md:w-36 lg:w-40 lg:h-40 text-justify text-sm sm:ml-0 ml-2'>
                 <div>EcoScape</div>
                 <div>31st December 2022</div>
                 <div className="text-xs font-semibold">"Majestic Gaze: The Enigmatic Tiger and the Green Kingdom"</div>
