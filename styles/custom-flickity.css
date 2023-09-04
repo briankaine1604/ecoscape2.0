@@ -1,0 +1,17 @@
+/* custom-flickity.css */
+
+/* Remove border-radius to make the buttons square */
+.flickity-prev-next-button.previous {
+    left: 0px;
+    border-radius: 0; /* Set border-radius to 0 */
+    width: 35px;
+    height: 35px;
+  }
+  
+  .flickity-prev-next-button.next {
+    right: 0px;
+    border-radius: 0; /* Set border-radius to 0 */
+    width: 35px;
+    height: 35px;
+  }
+  

@@ -15,6 +15,9 @@ module.exports = {
 
       height:{
         'grid1h':'400px',
+        'grid2h':'320px',
+        'grid3h':'350px',
+        'cardpic':'78%'
         
       },
 
