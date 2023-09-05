@@ -91,27 +91,7 @@
       @apply hover:scale-125 transform transition ease-in duration-100 delay-100;
      }
 
-     /* Override the styles for the next button */
-      .flickity-button.next {
-        background-color: #ff5733; /* Change the background color */
-        color: #fff;
-        font-size: 16px;
-        border: none;
-        width: 40px; /* Set a fixed width */
-        height: 40px; /* Set a fixed height to create a square button */
-        border-radius: 5px; /* Optionally add rounded corners */
-      }
-
-      /* Override the styles for the previous button */
-      .flickity-button.previous {
-        background-color: #3373ff; /* Change the background color */
-        color: #fff;
-        font-size: 16px;
-        border: none;
-        width: 40px; /* Set a fixed width */
-        height: 40px; /* Set a fixed height to create a square button */
-        border-radius: 5px; /* Optionally add rounded corners */
-      }
+     
 
       
       @keyframes slide-in-top {

@@ -23,8 +23,8 @@ const Section3 = () => {
              and deeply connected to the beauty of our planet.
             </div>
             <div className="flex mt-5 justify-between">
-              <StandardButton content={'Find out More'}/>
-              <StandardButton content={'Visit our Store'}/>
+              <StandardButton content={'Find out More'} bgColor={'bg-white'} border={'border-none'}/>
+              <StandardButton content={'Visit our Store'} bgColor={'bg-white'} border={'border-none'}/>
             </div>
           </div>
         </div>

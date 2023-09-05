@@ -13,10 +13,15 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
 
+      screens: {
+        'break':'700px',
+      },
+
       height:{
         'grid1h':'400px',
-        'grid2h':'320px',
-        'grid3h':'350px',
+        'grid2h':'260px',
+        'grid4h':'240px',
+        'grid3h':'300px',
         'cardpic':'78%'
         
       },
@@ -24,6 +29,8 @@ module.exports = {
       width:{
         'navwidth':'900px',
         'grid1w':'500px',
+        'grid2w':'300px',
+        'grid3w':'250px',
       },
 
       colors:{

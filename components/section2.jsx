@@ -16,18 +16,18 @@ const flickityOptions = {
 const Section2 = () => {
  
   const carouselData= [
-    {index: 1 , image:'flower-card.png', title:'1',Description:'kk',height:'h-grid2h'},
-    {index: 2 , image:'funding-card.png', title:'2',Description:'kk',height:'h-grid3h'},
-    {index: 3 , image:'product-card.png', title:'3',Description:'kk',height:'h-grid2h'},
-    {index: 4 , image:'research-card.png', title:'4',Description:'kk',height:'h-grid2h'},
-    {index: 5 , image:'wildlife-card.png', title:'5',Description:'kk',height:'h-grid2h'},
+    {index: 1 , image:'flower-card.png', title:"Nature's Symphony: A Bouquet of Yellow and Red Blossoms",Description:'kk',height:'md:h-grid2h h-grid4h', width:'w-grid3w md:w-grid2w lg:w-1/3'},
+    {index: 2 , image:'donate-card.png', title:"\"Toe the Line: A Fun Guide to Beach Conservation\"",Description:'kk',height:'md:h-grid3h h-grid2h', width:'lg:w-grid1w'},
+    {index: 3 , image:'green-card.png', title:"\"Caring for Nature:Nurturing Nature Through Action\"",Description:'kk',height:'md:h-grid2h h-grid4h', width:'w-grid2w lg:w-1/3'},
+    {index: 4 , image:'parrot-card.png', title:"\"The Vibrant Plumage of the Scarlet Macaw: Nature's Living Rainbow\"",Description:'kk',height:'md:h-grid2h h-grid4h', width:'w-grid2w lg:w-1/3'},
+    {index: 5 , image:'healthy-card.png', title:"Nature's Bounty: A Cornucopia of Health",Description:'kk',height:'md:h-grid2h h-grid4h', width:'w-grid2w lg:w-1/3'},
   ]
 
   return (
-    <div className="bg-purple-200 w-full h-screen flex flex-col justify-center overflow-hidden heading1 ">
-      Focus
+    <div className="bg-purple-200 w-full min-h-screen text-base lg:text-xl flex flex-col justify-center overflow-hidden  ">
+      <div className='ml-10 heading1'>Focus</div>
       <Flickity
-        className={'carousel border h-4/6 flex flex-col'} // default ''
+        className={'carousel px-10 w-full bg-purple-200'} // default ''
         elementType={'div'} // default 'div'
         options={flickityOptions} // takes flickity options {}
         disableImagesLoaded={false} // default false
@@ -36,8 +36,8 @@ const Section2 = () => {
       >
         
         {
-          carouselData.map(({index,image,title,Description,height})=>(
-            <div key={index} className={`carousel-cell card-style w-1/3 ${height} `}>
+          carouselData.map(({index,image,title,Description,height,width})=>(
+            <div key={index} className={`carousel-cell card-style ${height} ${width} `}>
               
              <div className='relative w-full h-cardpic '>
              <Image
@@ -50,11 +50,12 @@ const Section2 = () => {
                 />
              </div>
               
-              {title}
+              <div className='px-2'>{title}</div>
             </div>
           ))
         }
       </Flickity>
+      
     </div>
   );
 };
