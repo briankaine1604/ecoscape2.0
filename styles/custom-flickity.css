@@ -16,6 +16,18 @@
   }
 
   .flickity-viewport{
-    padding-left: 20px;
+    padding-left: 0px;
   }
+
+  /* draggable */
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: auto; /* Use 'auto' to set the default arrow cursor */
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: auto; /* Use 'auto' to set the default arrow cursor */
+}
+
+  
   

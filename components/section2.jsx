@@ -27,7 +27,7 @@ const Section2 = () => {
     <div className="bg-purple-200 w-full min-h-screen text-base lg:text-xl flex flex-col justify-center overflow-hidden  ">
       <div className='ml-10 heading1'>Focus</div>
       <Flickity
-        className={'carousel px-10 w-full bg-purple-200'} // default ''
+        className={'carousel w-full bg-purple-200'} // default ''
         elementType={'div'} // default 'div'
         options={flickityOptions} // takes flickity options {}
         disableImagesLoaded={false} // default false

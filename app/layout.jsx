@@ -6,8 +6,8 @@ const RootLayout = ({children}) => {
   return (
     <html>
       
-      
         <body className='jost'>
+          
             <Suspense fallback={<Loading/>}>
             {children}
             </Suspense>
