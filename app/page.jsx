@@ -8,10 +8,12 @@ import Section4 from '@components/section4';
 
 const Page = () => {
  
+  const showHeaderText = true; // Set this to true or false based on your requirements
+  const showHeaderImage = true;
 
   return (
     <div className='flex flex-col'>
-      <Header/>
+      <Header showtext={showHeaderText} showimage={showHeaderImage}/>
       <Section1/>
       <Section2/>
       <Section3/>

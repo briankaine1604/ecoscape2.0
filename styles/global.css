@@ -40,6 +40,10 @@
         @apply w-full h-12  absolute top-20 z-40 bg-transparent; 
     }
 
+    .navhead2{
+      @apply w-full h-12  top-20 z-40 bg-slate-900 border;
+    }
+
     .suspect{
         @apply w-full z-30 h-20 absolute bg-transparent ;
     }

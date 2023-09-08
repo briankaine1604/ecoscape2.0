@@ -7,12 +7,13 @@ import Navbar from './UI/navbarlinks';
 import Observer from './UI/observer';
 import HeaderState from './UI/useHeaderState';
 import HeaderSection from './UI/Navbar';
+import HeaderBackground from './headerBackground';
 
 
-const Header = () => {
+const Header = ({ showtext = true , showimage = true , navhead }) => {
 
   const navlinks=[
-    {id:'1',link:'#',name:'Home'},
+    {id:'1',link:'/',name:'Home'},
     {id:'2',link:'/blog',name:'Blog'},
     {id:'3',link:'/explore',name:'Explore Nature'},
     {id:'4',link:'/gallery',name:'Gallery'},
@@ -27,20 +28,8 @@ const Header = () => {
       <><Observer setIsSticking={setIsSticking} setIsSticking2={setIsSticking2} /></>
       
       <EcoButton toggle={toggle} />
-      <HeaderSection isSticking={isSticking} toggle={toggle} onClick={onClick} navlinks={navlinks} isSticking2={isSticking2} />
-      <div className='suspect2'>
-        <Image
-        fill={true}
-        style={{objectFit:"cover"}}
-        src={`/images/eco2.jpg`}
-        alt='green trees in a forest'
-        loading="lazy"
-        
-        />
-        
-      </div>
-      <div className='bg-slate-900 w-full h-screen absolute justify-center top-0 items-center flex bg-opacity-40 z-20 text-white uppercase'>
-        <div className='flex-col text-center text-3xl font-semibold'><div>"Exploring nature's beauty:</div> <div>Your Journey through the Ecoscape"</div> </div></div>
+      <HeaderSection isSticking={isSticking} toggle={toggle} onClick={onClick} navlinks={navlinks} isSticking2={isSticking2} navhead={navhead} />
+      <HeaderBackground showtext={showtext} showimage={showimage}/>
     </div>
   )
 }

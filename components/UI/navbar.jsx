@@ -2,9 +2,9 @@ import Hamburger from './hamburgernav';
 import Navbar from './navbarlinks';
 import Link from 'next/link';
 
-const HeaderSection = ({ isSticking, isSticking2, toggle, onClick, navlinks }) => {
+const HeaderSection = ({ isSticking, isSticking2, toggle, onClick, navlinks,navhead }) => {
   return (
-    <div className={`slide-in-top flex justify-between items-center lg:grid grid-cols-12 group navhead ${isSticking ? 'sticking' : ''} ${isSticking2 ? 'sticking2' : ''}`}>
+    <div className={`slide-in-top flex justify-between items-center lg:grid grid-cols-12 group ${navhead === "navhead2" ? 'navhead2' : 'navhead'} ${isSticking ? 'sticking' : ''} ${isSticking2 ? 'sticking2' : ''}`}>
         <div className='col-span-2 justify-center flex bitter items-center text-white text-4xl'>
           <Link href='/' className={`ml-5  ${!isSticking ? 'hidden' : 'flex'}`}>Ecoscape.</Link>
           </div>
